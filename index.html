@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" style="color: var(--primary-color); font-weight: bold;">AK</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center" style="height: 100vh; background: url('path/to/your-background.jpg') no-repeat center center/cover; position: relative;">
+        <div class="container text-center text-white">
+            <div class="hero-content">
+                <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Hello, I'm <span style="color: var(--primary-color);">Amr Kamoun</span></h1>
+                <p class="lead animate__animated animate__fadeInUp" style="margin-top: 20px;">
+                    A passionate <strong>Web Developer</strong> and <strong>Frontend Engineer</strong> crafting beautiful and functional websites.
+                </p>
+                <a href="#projects" class="btn btn-primary btn-lg mt-4 animate__animated animate__zoomIn">View My Work</a>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="machine-learning">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Virtual Fitness Coaching System</h3>
+                        <p class="project-date">February 2025</p>
+                        <p class="project-tech">Machine Learning, Unity, Flutter</p>
+                        <p class="project-desc">Developed a fitness coaching system integrating VR and deep learning for real-time exercise tracking using YOLOv8. Implemented pose estimation and feedback mechanisms to improve user posture.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="machine-learning">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Plant Disease Detector</h3>
+                        <p class="project-date">January 2025</p>
+                        <p class="project-tech">Python, Machine Learning, TensorFlow, Flask</p>
+                        <p class="project-desc">Implemented a web application that analyzes uploaded plant images using a trained deep learning model, accurately detecting and classifying plant diseases.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Christmas Shop Website</h3>
+                        <p class="project-date">December 2024</p>
+                        <p class="project-tech">AWS, API, HTML, CSS, JavaScript</p>
+                        <p class="project-desc">Developed a Christmas-themed online shop leveraging AWS services for hosting and scalability, while integrating various APIs to manage payments and inventory.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NLP Evaluation News</h3>
+                        <p class="project-date">December 2024</p>
+                        <p class="project-tech">JavaScript</p>
+                        <p class="project-desc">Developed a news evaluation system using NLP to analyze and categorize news articles.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Amr-Kamoun/nlp-evaluation-news" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Journal App</h3>
+                        <p class="project-date">November 2024</p>
+                        <p class="project-tech">JavaScript</p>
+                        <p class="project-desc">Created a web application that allows users to log weather conditions and view historical data.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Amr-Kamoun/Weather-Journal-App" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Blog Website</h3>
+                        <p class="project-date">September 2024</p>
+                        <p class="project-tech">HTML, CSS, JavaScript</p>
+                        <p class="project-desc">Designed and built a personal blog website using HTML, CSS, and JavaScript.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Amr-Kamoun/Personal-Blog-Website" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-hockey-puck"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Air Hockey Game</h3>
+                        <p class="project-date">May 2024</p>
+                        <p class="project-tech">OpenGL, C++</p>
+                        <p class="project-desc">Created an air hockey game using OpenGL and C++ for graphical rendering and game logic.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Amr-Kamoun/Air-Hockey-Game" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Remote Desktop App</h3>
+                        <p class="project-date">March 2024</p>
+                        <p class="project-tech">C++</p>
+                        <p class="project-desc">Created a remote desktop application using C++ to enable users to control another computer remotely.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GamesProSeif/remote-desktop-app" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Landing Page</h3>
+                        <p class="project-date">August 2024</p>
+                        <p class="project-tech">HTML, CSS, JavaScript</p>
+                        <p class="project-desc">Developed a responsive landing page with modern design principles and interactive elements.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Amr-Kamoun/Landing-Page" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>KRFS Library Management System</h3>
+                        <p class="project-date">July 2024</p>
+                        <p class="project-tech">C++, File Systems</p>
+                        <p class="project-desc">Built a library management system using KRFS file system for efficient book tracking and management.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Amr-Kamoun/KRFS-Library-Management-System" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 11 -->
+                <div class="project-card" data-category="desktop">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Modified SIC One-Pass Assembler</h3>
+                        <p class="project-date">June 2024</p>
+                        <p class="project-tech">C++, Assembly</p>
+                        <p class="project-desc">Implemented a one-pass assembler for the SIC machine with enhanced features for assembly language processing.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Amr-Kamoun/Modified-Sic-OnePassAssembler" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 12 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Job Networking App (Frontend)</h3>
+                        <p class="project-date">May 2024</p>
+                        <p class="project-tech">React, JavaScript</p>
+                        <p class="project-desc">Developed the frontend for a job networking app, enabling users to connect and share job opportunities.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GamesProSeif/job-networking-app-frontend" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 13 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <div class="img-placeholder">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Job Networking App (Backend)</h3>
+                        <p class="project-date">May 2024</p>
+                        <p class="project-tech">Node.js, Express</p>
+                        <p class="project-desc">Implemented the backend for a job networking app, providing APIs for user authentication and job postings.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GamesProSeif/job-networking-app-backend" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-category="programming" onclick="showSkills('Programming', [{name: 'C++', icon: 'fas fa-code'}, {name: 'Python', icon: 'fab fa-python'}, {name: 'C#', icon: 'fas fa-code'}, {name: 'Java', icon: 'fab fa-java'}])">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Click to view skills</p>
+                </div>
+                <div class="skill-card" data-category="web-development" onclick="showSkills('Web Development', [{name: 'HTML', icon: 'fab fa-html5'}, {name: 'CSS', icon: 'fab fa-css3-alt'}, {name: 'JavaScript', icon: 'fab fa-js'}, {name: 'React', icon: 'fab fa-react'}, {name: 'Bootstrap', icon: 'fab fa-bootstrap'}])">
+                    <i class="fas fa-globe"></i>
+                    <h3>Web Development</h3>
+                    <p>Click to view skills</p>
+                </div>
+                <div class="skill-card" data-category="database" onclick="showSkills('Database', [{name: 'MySQL', icon: 'fas fa-database'}, {name: 'Firebase', icon: 'fas fa-fire'}])">
+                    <i class="fas fa-database"></i>
+                    <h3>Database</h3>
+                    <p>Click to view skills</p>
+                </div>
+                <div class="skill-card" data-category="developer-tools" onclick="showSkills('Developer Tools', [{name: 'Git', icon: 'fab fa-git'}, {name: 'Docker', icon: 'fab fa-docker'}, {name: 'VS Code', icon: 'fas fa-code'}, {name: 'GitHub Actions', icon: 'fab fa-github'}])">
+                    <i class="fas fa-tools"></i>
+                    <h3>Developer Tools</h3>
+                    <p>Click to view skills</p>
+                </div>
+                <div class="skill-card" data-category="machine-learning" onclick="showSkills('Machine Learning', [{name: 'TensorFlow', icon: 'fas fa-brain'}, {name: 'YOLOv8', icon: 'fas fa-camera'}])">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Click to view skills</p>
+                </div>
+            </div>
+            <!-- Skills Details Box -->
+            <div id="skills-details-box" class="skills-details-box" style="display: none;">
+                <h3 id="skills-details-title"></h3>
+                <ul id="skills-details-list"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Modal -->
+    <div id="skills-modal" class="skills-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeSkillsModal()">&times;</span>
+            <h3 id="skills-title">Skills</h3>
+            <ul id="skills-list"></ul>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <ul class="social-links">
+                    <li><a href="https://github.com/Amr-Kamoun" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/amr-kamoun-025258244/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://x.com/AmrKamoun" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/amrkamoun_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/elking.amrkamoun/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+                <p>© 2025 Amr Kamoun. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
